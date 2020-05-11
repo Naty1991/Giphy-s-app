@@ -1,0 +1,656 @@
+.barra-gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0px;
+  height: 24px;
+}
+
+button, .btn-blancos, #buscador #div-input .boton-habilitado, .modo-dark .cabecera button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  color: #110038;
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 18px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+}
+
+button:hover, .btn-blancos:hover, #buscador #div-input .boton-habilitado:hover, .modo-dark .cabecera button:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+button:active, .btn-blancos:active, #buscador #div-input .boton-habilitado:active, .modo-dark .cabecera button:active {
+  border: 1px dotted #110038;
+}
+
+button a, .btn-blancos a, #buscador #div-input .boton-habilitado a, .modo-dark .cabecera button a {
+  color: #110038;
+}
+
+#elegir-tema #menu-temas button, #buscador #div-input button, .menu-opciones div {
+  background: #f0f0f0;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  color: #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+#elegir-tema #menu-temas button:hover, #buscador #div-input button:hover, .menu-opciones div:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+#elegir-tema #menu-temas button:active, #buscador #div-input button:active, .menu-opciones div:active {
+  background: #fff4fd;
+  border: 1px solid #cca6c9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+}
+
+.buscados button, .sugerencia button {
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  color: #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.buscados button:hover, .sugerencia button:hover {
+  cursor: pointer;
+}
+
+#elegir-tema #menu-temas, #buscador, #buscador #div-input input, .menu-opciones, #contenedor_mis_guifos, .contenedor_guifos {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  padding: 0px;
+}
+
+.modo-dark #elegir-tema #menu, .modo-dark #buscador, .modo-dark #buscador #menu-buscador {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+}
+
+.input, #contador, #subiendo-guifo {
+  background: #fffafe;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.barra-gradient p, .buscados p, .menu-opciones div, #crear_guifo p, #crear_guifo ol li, #subiendo-guifo p, #sub-exito p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  margin: 5px;
+  height: 25px;
+  overflow: hidden;
+}
+
+body {
+  background-color: #f0f0f0;
+  margin: 0px;
+  padding: 0px;
+}
+
+.barra-gradient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.barra-gradient p {
+  overflow: hidden;
+}
+
+img {
+  cursor: pointer;
+}
+
+.contenedor {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px;
+}
+
+.cabecera {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contenedor-botones {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.btn-blancos {
+  background: #ffffff;
+  margin: 5px;
+}
+
+.btn-blancos:hover {
+  background: #f7c9f3;
+}
+
+.btn-rojo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ff6161;
+  margin: 0px;
+}
+
+.btn-3 {
+  margin-left: 0px;
+  width: 25px;
+}
+
+#btn-4 {
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 20px;
+  text-align: left;
+  width: 100px;
+}
+
+#btn-4:active {
+  border: none;
+}
+
+#btn-4:hover {
+  border: 1px dotted #110038;
+}
+
+#elegir-tema {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#elegir-tema #btn-tema {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#elegir-tema #btn-tema #btn-2 {
+  margin-left: 20px;
+  margin-right: 0px;
+}
+
+#elegir-tema #menu-temas {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  padding: 0px;
+  width: 165px;
+}
+
+#elegir-tema #menu-temas button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#elegir-tema #menu-temas button:active {
+  background: #2e32fb;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+  color: #ffffff;
+}
+
+#buscador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0px 25px 0px;
+}
+
+#buscador div {
+  margin: 5px;
+}
+
+#buscador #div-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+
+#buscador #div-input input {
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  height: 40px;
+  padding-left: 5px;
+  width: 1200px;
+}
+
+#buscador #div-input button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  color: #b4b4b4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin: 5px;
+  width: 100px;
+}
+
+#buscador #div-input button img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 16px;
+  width: 16px;
+}
+
+#buscador #div-input .boton-habilitado {
+  height: 30px;
+  margin: 5px;
+  width: 100px;
+}
+
+.buscados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.buscados button {
+  height: 24px;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.buscados button::before {
+  content: '#';
+}
+
+.buscados p {
+  color: #110038;
+}
+
+.menu-opciones {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-opciones div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #dbdbdb;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  color: #110038;
+  height: 30px;
+  margin: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.input {
+  margin: 25px 0px 25px 0px;
+  width: 1255px;
+}
+
+.contenedores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+  -webkit-columns: 4;
+          columns: 4;
+}
+
+.sugerencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 324px;
+  margin-top: 5px;
+  width: 300px;
+}
+
+.sugerencia:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+.sugerencia .giphy-sugerido {
+  height: 324px;
+  width: 300px;
+  position: absolute;
+  z-index: -2;
+}
+
+.sugerencia button {
+  height: 28px;
+  margin: 0px;
+  width: 75px;
+  z-index: 1;
+}
+
+.sugerencia button:hover {
+  border: 1px dotted #110038;
+}
+
+#contenedorDeBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contenedorDeBusqueda img {
+  max-height: 200px;
+  margin: 5px;
+}
+
+#contenedorDeBusqueda img:hover {
+  cursor: pointer;
+  border: 1px dotted #110038;
+}
+
+#contenedor_mis_guifos {
+  padding: 5px;
+}
+
+.contenedor_guifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 290px 20px 290px;
+  padding: 5px;
+}
+
+.contenedor_guifos video {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#crear_guifo p {
+  color: #110038;
+  margin-left: 45px;
+}
+
+#crear_guifo ol {
+  list-style: none;
+  counter-reset: lista;
+}
+
+#crear_guifo ol li {
+  color: #110038;
+}
+
+#crear_guifo ol li::before {
+  counter-increment: lista;
+  content: counter(lista) ")";
+  font-weight: bold;
+  margin: 5px;
+}
+
+#contador {
+  text-align: center;
+  width: 100px;
+}
+
+#subiendo-guifo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#subiendo-guifo p {
+  color: #110038;
+  font-weight: bold;
+}
+
+#exito {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#exito button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 5px;
+}
+
+#sub-exito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px;
+}
+
+#sub-exito p {
+  color: #110038;
+  font-weight: bold;
+}
+
+#sub-exito button {
+  width: 200px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#gif img {
+  width: 100%;
+}
+
+#contenedor-2,
+#instrucciones,
+#chequeo,
+#capturando,
+#vista-previa,
+#subiendo,
+#btn-captura {
+  display: none;
+}
+
+#gif,
+#video {
+  width: 100%;
+}
+
+.modo-dark .contenedor {
+  background-color: #110038;
+}
+
+.modo-dark .barra-gradient {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+}
+
+.modo-dark .cabecera button {
+  background: #ee3efe;
+  border: 0 1px 0 0 #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: #ffffff;
+}
+
+.modo-dark .cabecera button a {
+  color: #ffffff;
+}
+
+.modo-dark .cabecera button:hover {
+  border: 1px dotted #ffffff;
+}
+
+.modo-dark .cabecera .btn-3 {
+  margin-left: 0px;
+  width: 25px;
+}
+
+.modo-dark #gifOF_logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.modo-dark #elegir-tema #menu {
+  display: none;
+}
+
+.modo-dark #buscador #div-input button {
+  border: 0 1px 0 0 #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: #b4b4b4;
+}
+
+.modo-dark #buscador #div-input button img {
+  margin: 0px;
+}
+
+.modo-dark #buscador #menu-buscador div {
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  background: #cccccc;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modo-dark #buscador #menu-buscador div p {
+  color: #110038;
+}
+/*# sourceMappingURL=estilos.css.map */

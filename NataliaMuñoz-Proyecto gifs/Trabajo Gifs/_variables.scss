@@ -1,0 +1,129 @@
+$background-1: #f0f0f0;
+$background-2: #ee3efe;
+$background-3: #cccccc;
+$border: 1px dotted #110038;
+$border-1: 1px solid #808080;
+$border-2: 1px solid #110038;
+$box-shadow: 0 1px 0 0 #110038;
+$box-shadow-1: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+$box-shadow-2: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+$color-gradiente-day: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+$color-gradiente-dark: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+$fondo-dark: #110038;
+$fondo-Day: #ffffff;
+$font-family1: 'Chakra Petch', sans-serif;
+$font-size-s: 16px;
+$font-size-m: 20px;
+
+%barras {
+	background-image: $color-gradiente-day;
+	box-shadow: $box-shadow;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0px;
+	height: 24px;
+}
+%boton {
+	align-items: center;
+	background: #f7c9f3;
+	border: $border-2;
+	color: $fondo-dark;
+	box-shadow: $box-shadow;
+	display: flex;
+	font-family: $font-family1;
+	font-size: $font-size-s;
+	height: 36px;
+	justify-content: center;
+	line-height: 18px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	width: 140px;
+
+	&:hover {
+		border: $border;
+		cursor: pointer;
+	}
+
+	&:active {
+		border: $border;
+	}
+
+	a {
+		color: $fondo-dark;
+	}
+}
+
+%boton-menu-temas {
+	background: $background-1;
+	border: $border-2;
+	box-shadow: $box-shadow-2;
+	color: $fondo-dark;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+
+	&:hover {
+		border: $border;
+		cursor: pointer;
+	}
+
+	&:active {
+		background: #fff4fd;
+		border: 1px solid #cca6c9;
+		box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+	}
+}
+%botones-celestes {
+	background: #4180f6;
+	border: 1px solid #4c2f99;
+	box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+	color: $fondo-Day;
+	font-family: $font-family1;
+	font-size: 14px;
+	margin: 5px;
+	overflow: hidden;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+%container {
+	background: #e6e6e6;
+	box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+	padding: 0px;
+}
+
+%container-dark {
+	background: #b4b4b4;
+	box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+}
+
+%container-input {
+	background: #fffafe;
+	border: 1px solid #e6bbe2;
+	box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+%p {
+	align-self: center;
+	color: #ffffff;
+	font-family: $font-family1;
+	font-size: $font-size-s;
+	margin: 5px;
+	height: 25px;
+	overflow: hidden;
+}
+
+%section {
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 40px 20px 40px 20px;
+	width: 100%;
+}

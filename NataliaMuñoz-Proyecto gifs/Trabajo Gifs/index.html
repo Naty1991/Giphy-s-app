@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Proyecto gifs</title>
+  </head>
+  <body>
+    <div class="bienvenidos">
+      <p class="letra">
+        ¡Bienvenidos/as guifos.com-----Donde los gifs están. Números de visitas
+        1.000.000!
+      </p>
+    </div>
+    <header class="contenedor">
+      <nav>
+        <img
+          class="logotipo"
+          id="logotipo"
+          src="imagenes/logogy1.png"
+          alt="logo_gifos"
+        />
+        <div class="botonero">
+          <a href="./crear_gifos.html" id="crear" class="crear">Crear Guifos</a>
+          <a href="./crear_gifos.html" id="gifos">MisgifOs</a>
+          <button class="switch" id="switch">
+            <span><i class="far fa-sun"></i></span>
+            <span><i class="fas fa-moon"></i></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="looking" id="looking">
+      <p class="up">Buscar</p>
+    </div>
+    <div class="formulario" id="formulario">
+      <form class="form" name="formulario" method="GET">
+        <input
+          type="text"
+          id="valor"
+          name="nombre"
+          placeholder="Escriba aquí"
+          class="valor"
+        />
+        <button type="submit" id="submit" class="submit">
+          Buscar
+          <span id="lupa" class="lupa"><i class="fas fa-search"></i></span>
+        </button>
+      </form>
+    </div>
+
+    <div id="busquedas-previas" class="busquedas-previas"></div>
+
+    <div id="busqueda" class="busqueda"></div>
+
+    <div class="aviso" id="aviso">
+      <p class="hoy" id="hoy">Hoy te sugerimos:</p>
+    </div>
+
+    <div id="aleatorio" class="aleatorio"></div>
+
+    <div class="trending" id="trending">
+      <p class="patendencia" id="patendencia">Tendencias:</p>
+    </div>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="giphy.js"></script>
+  </body>
+</html>
